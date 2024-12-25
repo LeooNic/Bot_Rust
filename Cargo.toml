@@ -1,0 +1,17 @@
+[package]
+name = "market_data_processor"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "market_data_processor"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.19", features = ["extension-module"] }
+polars = { version = "0.34", features = ["lazy"] }
+calamine = "0.22"
+thiserror = "1.0"
+rayon = "1.8"
+num = "0.4"
+chrono = "0.4"
